@@ -16,9 +16,8 @@ jobs:
         with:
           files: "app/build/outputs/apk/debug/app-debug.apk"
       - name: File exists
-       if: steps.check_files.outputs.files_exists == 'true'
-       # Only runs if all of the files exists
-       run: echo All files exists!
+        if: steps.check_files.outputs.files_exists == 'true'
+        run: echo All files exists!
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
