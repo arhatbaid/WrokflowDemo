@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             val url = "https://shift-api.apps.dev-drivevariant.com/welcome"
             val i = Intent(Intent.ACTION_VIEW)
             i.data = Uri.parse(url)
+
             startActivity(i)
         }
     }
